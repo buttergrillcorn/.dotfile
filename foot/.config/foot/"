@@ -1,0 +1,4 @@
+[main]
+font = Sarasa Term SC Nerd:size=10
+dpi-aware = yes
+pad = 5x5 center
