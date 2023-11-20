@@ -17,6 +17,10 @@ output HDMI-A-1 {
        resolution 2560x1440@144Hz position 0,0
        background ~/Pictures/Wallpapers/monochrome-building.jpeg fill
        }
+output eDP-1 {
+       resolution 2400x1600@120Hz position 0,0
+       background ~/Pictures/Wallpaper/monochrome-building.jpeg fill
+}
 gaps inner 7
 gaps outer 0
 default_border pixel 2
