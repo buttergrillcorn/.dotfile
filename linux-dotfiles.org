@@ -21,6 +21,8 @@ Dark grey color
 *** QT Themes
 **** Qt5ct/Qt6ct
 **** Kvantum
+*** Fonts
+**** Sarasa Term SC Nerd
 ** Menu
 *** Fuzzel
 ** Terminal
