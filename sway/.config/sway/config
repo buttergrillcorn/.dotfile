@@ -8,20 +8,32 @@ set $term foot
 set $term-float foot -a foot-float
 set $menu fuzzel
 set $browser firefox
-set $editor emacsclient -c -a ""
-set $editor-reload notify-send "Emacs Service Restarted" "$(systemctl --user stop emacs && systemctl --user start emacs)"
+set $editor foot nvim
+# set $editor emacsclient -c -a ""
+# set $editor-reload notify-send "Emacs Service Restarted" "$(systemctl --user stop emacs && systemctl --user start emacs)"
 set $file thunar
 set $file-float  ~/.config/sway/floating thunar
 
-# Display & Appearance
+# --- Output (Displays) ---
 output HDMI-A-1 {
        resolution 2560x1440@144Hz position 0,0
        background ~/Pictures/Wallpapers/monochrome-building.jpeg fill
        }
+## --- Surface Laptop Studio Settings ---
 output eDP-1 {
        resolution 2400x1600@120Hz position 0,0 scale 1.25
        background ~/Pictures/Wallpapers/monochrome-building.jpeg fill
 }
+
+# --- Input (Devices) ---
+input mouse accel_profile flat
+input touchpad natural_scroll enabled
+input touch natural_scroll enabled
+## --- Surface Laptop Studio Settings ---
+input 1118:2479:Microsoft_Surface_045E:09AF_Touchpad natural_scroll enabled
+input 1118:2480:Microsoft_Surface_045E:09B0_Keyboard xkb_layout gb
+input 1118:2478:Microsoft_Surface_045E:09AE_Keyboard xkb_layout gb
+
 gaps inner 7
 gaps outer 0
 default_border pixel 2
