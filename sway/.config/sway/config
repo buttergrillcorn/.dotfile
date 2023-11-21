@@ -9,6 +9,7 @@ set $term-float foot -a foot-float
 set $menu fuzzel
 set $browser firefox
 set $editor emacsclient -c -a ""
+set $editor-reload notify-send "Emacs Service Restarted" "$(systemctl --user stop emacs && systemctl --user start emacs)"
 set $file thunar
 set $file-float  ~/.config/sway/floating thunar
 
@@ -19,7 +20,7 @@ output HDMI-A-1 {
        }
 output eDP-1 {
        resolution 2400x1600@120Hz position 0,0
-       background ~/Pictures/Wallpaper/monochrome-building.jpeg fill
+       background ~/Pictures/Wallpapers/monochrome-building.jpeg fill
 }
 gaps inner 7
 gaps outer 0
@@ -44,6 +45,7 @@ bindsym $mod+q kill
 bindsym $mod+d exec $menu
 bindsym $mod+b exec $browser
 bindsym $mod+n exec $editor
+bindsym $mod+Ctrl+Shift+n exec $editor-reload
 bindsym $mod+e exec $file
 bindsym $mod+Shift+e exec $file-float
 

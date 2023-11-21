@@ -1,1 +1,11 @@
-#+TITLE: Dotfiles
+#+TITLE: Dotfiles Management With Stow (+ Git)
+* What is it?
+This is my personal dotfiles repository for managing, you guessed, my personal configuration files and whatnot.
+
+Essentially, when for whatever reason that I need to get a new install of Linux, I can easily reproduce the same setup/config for most if not all of the main packages that I use.
+
+So for things like:
++ Window Manager
++ Notification Daemon
++ Terminal Emulators
++
