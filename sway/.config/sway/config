@@ -19,7 +19,7 @@ output HDMI-A-1 {
        background ~/Pictures/Wallpapers/monochrome-building.jpeg fill
        }
 output eDP-1 {
-       resolution 2400x1600@120Hz position 0,0
+       resolution 2400x1600@120Hz position 0,0 scale 1.25
        background ~/Pictures/Wallpapers/monochrome-building.jpeg fill
 }
 gaps inner 7

@@ -6,7 +6,9 @@ Sway-im for better input manager (fcitx5) support
 **** swaybg
 **** swaylock
 **** swayidle
-** Status Bar
+**** sway autotiling
+[[https://github.com/nwg-piotr/autotiling]]
+Aur package available
 *** Waybar
 ** Screenshot
 *** wl-record
@@ -49,3 +51,6 @@ danhper/fish-ssh-agent
 *** Status Bar Applets
 **** Network Manager Applet
 **** Blueman Applet
+** Text Editor
+*** Emacs
+**** Doom
