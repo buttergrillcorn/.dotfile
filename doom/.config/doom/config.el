@@ -44,8 +44,8 @@
 (setq org-directory "~/org/")
 
 ;; Org Capture
-(setq org-default-notes-file
-      (concat org-directory "refile.org"))
+;; (setq org-default-notes-file
+;;       (concat org-directory "refile.org"))
 (setq org-capture-templates
       `(("t" "Todo" entry (file "todo.org")
          ,(string-join '("* TODO %?"
